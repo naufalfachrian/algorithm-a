@@ -49,10 +49,6 @@ object AlgA {
 
         } while (!validated(av, sd, s, numbers.average(), numbers.standardDeviation(), 1.134 * sumC))
 
-        numbers.forEach {
-            println(String.format("%.2f", it))
-        }
-
         val algA = numbers.average()
         return Result(i, algA, 1.134 * numbers.standardDeviation(), calculateSHorwit(algA))
     }
